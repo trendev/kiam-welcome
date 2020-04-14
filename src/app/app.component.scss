@@ -17,3 +17,30 @@
     justify-content: space-between;
     padding: 0;
 }
+
+.main_content {
+    position: absolute;
+    top: 64px;
+    bottom:0px;
+    left: 0px;
+    width: 100% !important;
+    // height: 100% !important;
+}
+
+.sidenav {
+    position: fixed;
+    top: 64px;
+    left: 0px;
+    bottom:0px;
+}
+
+.active {
+    color: #673ab7;
+}
+
+@media all and (max-device-width: 600px) {
+    .main_content,
+    .sidenav {
+        top: 56px;
+    }
+}
