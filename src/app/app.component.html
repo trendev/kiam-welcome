@@ -1,10 +1,6 @@
-<div>
-  <h1 class="mat-display-2">Bienvenue sur {{title}}</h1>
-</div>
-<div>
-  <a mat-raised-button color="primary" href="https://kiam.fr/app/">Accéder à l'appplication</a>
-</div>
-<div>
-  <a mat-raised-button color="accent" href="https://kiam.fr/app/sign-up">S'inscrire</a>
-</div>
+<mat-toolbar class="fixed-header mat-elevation-z2" color="primary" role="header" aria-label="toolbar">
+  <mat-toolbar-row class="toolbar_row">
+      <span class="toolbar_title">{{title}}</span>
+  </mat-toolbar-row>
+</mat-toolbar>
 <router-outlet></router-outlet>
