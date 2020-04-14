@@ -1,6 +1,11 @@
 <mat-toolbar class="fixed-header mat-elevation-z2" color="primary" role="header" aria-label="toolbar">
   <mat-toolbar-row class="toolbar_row">
-      <span class="toolbar_title">{{title}}</span>
+    <span class="glue"></span>
+    <span class="toolbar_title">{{title}}</span>
+    <span class="glue"></span>
+    <a type="button" mat-icon-button href="https://kiam.fr/app/">
+      <mat-icon aria-label="Application" matTooltip="Application">exit_to_app</mat-icon>
+    </a>
   </mat-toolbar-row>
 </mat-toolbar>
 <router-outlet></router-outlet>
