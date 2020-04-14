@@ -15,7 +15,7 @@ jobs:
       - run:
           name: docker push
           command: docker push $DOCKER_IMAGE:latest
-  build: # generic job for other branches
+  build: # generic job for other branches //should not be used for this project
     machine:
       image: ubuntu-1604:201903-01
       docker_layer_caching: true
