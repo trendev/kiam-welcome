@@ -20,10 +20,17 @@
 
 .main_content {
     position: absolute;
+    display: flex;
+    justify-content: center;
     top: 64px;
     bottom:0px;
     left: 0px;
-    width: 100% !important;
+    width: 100%;
+    height: 100%;
+
+    &>*.mat-drawer-container{
+        width: 100%;
+    }
 }
 
 .sidenav {
