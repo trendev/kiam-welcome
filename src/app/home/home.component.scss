@@ -1,3 +1,32 @@
-.content {
-    background-color: white;
+section {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+// mat-divider {
+//     position: relative;
+//     // top: +18px;
+//     margin: 40px;
+// }
+
+section {
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}
+
+.glue {
+    flex: 1;
+}
+
+mat-card {
+    margin: 12px;
+}
+
+.signup-button {
+    position: relative;
+    width: 200px;
+    text-align: center;
+    border-radius: 48px;
 }
