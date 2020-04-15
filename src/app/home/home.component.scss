@@ -10,12 +10,6 @@ section {
 //     margin: 40px;
 // }
 
-section {
-    display: flex;
-    flex-flow: column;
-    height: 100%;
-}
-
 .glue {
     flex: 1;
 }
@@ -29,4 +23,9 @@ mat-card {
     width: 200px;
     text-align: center;
     border-radius: 48px;
+}
+
+.signup-div {
+    display: flex;
+    justify-content: center;
 }
