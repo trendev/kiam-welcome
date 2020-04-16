@@ -32,22 +32,22 @@ mat-card {
 
 .features {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     align-content: center;
 }
 
 .feature_card {
-    width: 300px;
+    width: 350px;
 }
 
-.item{
+.item {
     display: flex;
     align-content: center;
     align-items: center;
 }
 
-.item > span {
+.item>span {
     padding-left: 12px;
 }
 
