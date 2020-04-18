@@ -5,22 +5,22 @@
                 Kit pour les Indépendants et les Artisans Malins
             </mat-card-title>
             <mat-card-subtitle>
-                Indépendant ou Artisan exerçant individuellement, vous recherchez un outil pratique pour vous assister
+                indépendant ou artisan exerçant individuellement, vous recherchez un outil pratique pour vous assister
                 dans
                 la gestion quotidienne de votre entreprise et vous faciliter un peu la vie ?
             </mat-card-subtitle>
         </mat-card-header>
         <mat-card-content>
             <div class="signup-div">
-                <a mat-raised-button color="accent" class="signup-button"
-                    href="https://kiam.fr/app/sign-up ">Inscription</a>
+                <a mat-raised-button color="primary" class="signup-button" href="https://kiam.fr/app/sign-up ">S'inscrire
+                    maintenant</a>
             </div>
         </mat-card-content>
     </mat-card>
     <div class="features">
         <mat-card class="feature_card">
             <mat-card-header>
-                <i mat-card-avatar class="material-icons">category</i>
+                <i mat-card-avatar class="material-icons">widgets</i>
                 <mat-card-title>Gestion simplifiée et intuitive</mat-card-title>
                 <mat-card-subtitle>toute l'application est pensée pour être rapide et facile d'utilisation
                 </mat-card-subtitle>
@@ -127,4 +127,39 @@
             </mat-card-content>
         </mat-card>
     </div>
+    <mat-card>
+        <mat-card-header>
+            <i mat-card-avatar class="material-icons">euro</i>
+            <mat-card-title>Tarification simple</mat-card-title>
+            <mat-card-subtitle>pas de surcoût caché, kiam est conçue pour permettre aux entrepreneurs,
+                notamment les plus modestes, de gérer efficacement leurs activités sans mauvaises surprises !
+            </mat-card-subtitle>
+        </mat-card-header>
+        <mat-card-content>
+            <div class="item">
+                <mat-icon color="accent">undo</mat-icon>
+                <span>aucun engagement</span>
+            </div>
+            <div class="item">
+                <mat-icon color="accent">shop_two</mat-icon>
+                <span>souscription mensuelle : 3 euros TTC / mois</span>
+            </div>
+            <div class="item">
+                <mat-icon color="accent">shop</mat-icon>
+                <span>souscription annuelle : 30 euros TTC / an</span>
+            </div>
+            <div class="item">
+                <mat-icon color="accent">emoji_people</mat-icon>
+                <span>30 jours d'utilisation gratuite</span>
+            </div>
+            <mat-divider style="margin-top: 8px" [inset]="true"></mat-divider>
+            <mat-card-actions>
+                <div class="signup-div">
+                    <a mat-raised-button color="accent" class="signup-button"
+                        href="https://kiam.fr/app/sign-up ">S'inscrire
+                        maintenant</a>
+                </div>
+            </mat-card-actions>
+        </mat-card-content>
+    </mat-card>
 </section>
