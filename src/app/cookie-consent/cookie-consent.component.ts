@@ -1,5 +1,5 @@
-import { Component, OnInit, Inject } from '@angular/core';
-import { MAT_SNACK_BAR_DATA } from '@angular/material/snack-bar';
+import { Component, Inject } from '@angular/core';
+import { MAT_SNACK_BAR_DATA, MatSnackBarRef } from '@angular/material/snack-bar';
 
 @Component({
   selector: 'app-cookie-consent',
@@ -10,8 +10,13 @@ export class CookieConsentComponent {
 
   title = 'nom_application';
 
-  constructor(@Inject(MAT_SNACK_BAR_DATA) public data: any) {
+  constructor(@Inject(MAT_SNACK_BAR_DATA) public data: any,
+              public snackBarRef: MatSnackBarRef<CookieConsentComponent>) {
     this.title = data.title;
+  }
+
+  accept(){
+    this.snackBarRef.dismissWithAction();
   }
 
 }

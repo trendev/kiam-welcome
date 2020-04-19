@@ -15,7 +15,7 @@ export class AppComponent implements OnInit {
     const snackBarRef = this.snackBar.openFromComponent(CookieConsentComponent, { data: { title: this.title } });
 
     snackBarRef.onAction().subscribe(() => {
-      console.log('The snack-bar action was triggered!');
+      console.log('ToS accepted!');
     });
 
   }
