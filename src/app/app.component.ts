@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
+import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ export class AppComponent implements OnInit {
 
     snackBarRef.onAction().subscribe(() => {
       console.log('ToS accepted!');
+      document.cookie = `${this.title}-cookie-agreement=${new Date().getTime()}`;
     });
 
   }
