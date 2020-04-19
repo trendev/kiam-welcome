@@ -1,7 +1,7 @@
+import { ConsentService } from './consent.service';
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
-import { DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'app-root',
@@ -10,15 +10,18 @@ import { DOCUMENT } from '@angular/common';
 })
 export class AppComponent implements OnInit {
   title = 'kiam';
-  constructor(private snackBar: MatSnackBar) { }
+
+  constructor(private snackBar: MatSnackBar, private consentService: ConsentService) {
+  }
 
   ngOnInit() {
-    const snackBarRef = this.snackBar.openFromComponent(CookieConsentComponent, { data: { title: this.title } });
+    if (!this.consentService.isConsented()) {
+      const snackBarRef = this.snackBar.openFromComponent(CookieConsentComponent, { data: { title: this.title } });
 
-    snackBarRef.onAction().subscribe(() => {
-      console.log('ToS accepted!');
-      document.cookie = `${this.title}-cookie-agreement=${new Date().getTime()}`;
-    });
+      snackBarRef.onAction().subscribe(() => {
+        this.consentService.consent();
+      });
+    }
 
   }
 
