@@ -15,13 +15,13 @@ export class ConsentService {
   }
 
   isConsented() {
-    return !!sessionStorage.getItem(this.keyName);
+    return !!localStorage.getItem(this.keyName);
   }
 
   consent() {
-    sessionStorage.setItem(this.keyName, `${new Date().getTime()}`);
+    localStorage.setItem(this.keyName, `${new Date().getTime()}`);
   }
   removeConsent() {
-    sessionStorage.removeItem(this.keyName);
+    localStorage.removeItem(this.keyName);
   }
 }
