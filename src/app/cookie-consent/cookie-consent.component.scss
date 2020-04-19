@@ -1,8 +1,22 @@
 .actions {
     display: flex;
-    justify-content: stretch;
+    flex-direction: column;
 }
 
-.tos{
+.agreement {
+    display: flex;
+    justify-content: space-between;
+}
+
+.action {
+    flex-grow: 10;
+}
+
+.glue{
+    flex: 1 1 auto;
+}
+
+.tos {
+    margin-top: 8px;
     flex-grow: 2;
 }
