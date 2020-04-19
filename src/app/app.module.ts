@@ -6,11 +6,13 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
+import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    CookieConsentComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
