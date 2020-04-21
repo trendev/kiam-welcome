@@ -1,1 +1,42 @@
-<p>faq works!</p>
+<h1 class="mat-display-1 title">Foire Aux Questions</h1>
+<mat-expansion-panel [expanded]=true>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>Application</h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div>
+        <h2>Je ne trouve pas l'application sur App Store ou Play Store, est-ce normal?</h2>
+        <p class="response">Oui, c'est tout à fait normal.</p>
+        <p class="response"><b>{{appName}} est une application cloud (webapp)</b>, il ne s'agit pas d'une application
+            native Android ou iOS.</p>
+        <p class="response">Elle a juste besoin d'un navigateur internet récent pour s'exécuter correctement.</p>
+    </div>
+    <div class="next">
+        <h2>Est-ce que je peux télécharger l'application sur mon téléphone ou ma tablette?</h2>
+        <p class="response">Il n'est pas nécessaire de télécharger l'application sur votre téléphone ou votre tablette.
+        </p>
+        <p class="response">Nous recommandons de <b>sauvegarder le lien de l'application <a href="/app/"
+                    target="blank">{{appName}} </a> dans les favoris</b> de votre navigateur internet.</p>
+        <p class="response">Si vous le souhaitez, vous pouvez néanmoins ajouter un raccourci à l'écran d'accueil de
+            votre téléphone ou de votre tablette (ex: sur <a
+                href="https://support.mozilla.org/fr/kb/comment-ajouter-un-raccourci-vers-site-web-firefox-android"
+                target="blank">Android</a> ou <a href="https://support.apple.com/fr-fr/guide/iphone/iph42ab2f3a7/ios"
+                target="blank">iOS</a>).</p>
+    </div>
+    <div class="next">
+        <h2>J'utilise Edge sur Windows 10 et j'ai un smartphone avec Windows Mobile. Est-ce que je peux aussi utiliser
+            l'application? </h2>
+        <p class="response">Oui, bien sûr. <b>{{appName}} fonctionne sur tous les appareils possédant un navigateur
+                internet récent.</b>
+        </p>
+        <p class="response">Cela signifie qu'elle fonctionne aussi bien sur un ordinateur avec Edge, Chrome, Firefox ou
+            Safari (pour ne citer que ceux là...) que sur
+            un smartphone ou une tablette numérique avec Chrome ou Safari par exemple.</p>
+        <p class="response">Les consoles de salons et les Box TV possédant également un navigateur internet, il est <b>aussi tout à fait possible d'utiliser {{appName}} sur votre télévision...</b></p>
+    </div>
+    <!-- <mat-action-row>
+        <button mat-button>Click me</button>
+    </mat-action-row> -->
+</mat-expansion-panel>
