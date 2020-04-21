@@ -15,10 +15,12 @@
     <mat-sidenav #sidenav mode="over" class="sidenav" mode="push">
       <mat-nav-list>
         <a mat-list-item href="#" rel="nofollow" style="height: 0px;"></a>
-        <a mat-list-item routerLink="home" routerLinkActive="active" (click)="sidenav.close()" rel="nofollow">
-          <mat-icon matListIcon>home</mat-icon></a>
-          <a mat-list-item routerLink="." (click)="sidenav.close()" rel="nofollow">
-            <mat-icon matListIcon>help</mat-icon></a>
+        <a mat-list-item routerLink="home" routerLinkActive="active" (click)="sidenav.close()">
+          <mat-icon matListIcon>home</mat-icon>
+        </a>
+        <a mat-list-item routerLink="faq" routerLinkActive="active" (click)="sidenav.close()">
+          <mat-icon matListIcon>help</mat-icon>
+        </a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>

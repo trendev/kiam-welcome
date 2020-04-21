@@ -7,12 +7,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
+import { FAQComponent } from './faq/faq.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    CookieConsentComponent
+    CookieConsentComponent,
+    FAQComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
