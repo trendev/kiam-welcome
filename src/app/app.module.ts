@@ -8,13 +8,15 @@ import { MaterialModule } from './material.module';
 import { HomeComponent } from './home/home.component';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
 import { FAQComponent } from './faq/faq.component';
+import { ApplicationQuestionsComponent } from './faq/application-questions/application-questions.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     CookieConsentComponent,
-    FAQComponent
+    FAQComponent,
+    ApplicationQuestionsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

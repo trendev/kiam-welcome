@@ -8,6 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class FAQComponent implements OnInit {
 
   appName = 'kiam';
+  expanded = true;
 
   constructor() { }
 
