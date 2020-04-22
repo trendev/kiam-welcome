@@ -1,3 +1,4 @@
+import { environment } from '@env/environment';
 import { Component, Inject } from '@angular/core';
 import { MAT_SNACK_BAR_DATA, MatSnackBarRef } from '@angular/material/snack-bar';
 
@@ -9,13 +10,14 @@ import { MAT_SNACK_BAR_DATA, MatSnackBarRef } from '@angular/material/snack-bar'
 export class CookieConsentComponent {
 
   title = 'nom_application';
+  tos: string;
 
-  constructor(@Inject(MAT_SNACK_BAR_DATA) public data: any,
-              public snackBarRef: MatSnackBarRef<CookieConsentComponent>) {
+  constructor(@Inject(MAT_SNACK_BAR_DATA) public data: any, public snackBarRef: MatSnackBarRef<CookieConsentComponent>) {
     this.title = data.title;
+    this.tos = environment.tos;
   }
 
-  accept(){
+  accept() {
     this.snackBarRef.dismissWithAction();
   }
 

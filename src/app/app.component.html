@@ -21,6 +21,11 @@
         <a mat-list-item routerLink="faq" routerLinkActive="active" (click)="sidenav.close()">
           <mat-icon matListIcon>help</mat-icon>
         </a>
+        <a mat-list-item (click)="sidenav.close()"
+          [href]="tos"
+          target="_blank">
+          <mat-icon matListIcon>policy</mat-icon>
+        </a>
       </mat-nav-list>
     </mat-sidenav>
     <mat-sidenav-content>
