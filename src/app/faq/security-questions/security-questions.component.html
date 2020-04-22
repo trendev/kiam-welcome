@@ -1,1 +1,63 @@
-<p>security-questions works!</p>
+<mat-expansion-panel [expanded]=expanded>
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            <h1>Sécurité 🔐</h1>
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <div>
+        <h3>Je suis déconnecté au bout d'un certain temps, est-ce normal ?</h3>
+        <p class="response">Oui, c'est tout à fait normal.</p>
+        <p class="response"><b>Pour des raisons de sécurité</b>, une session utilisateur a une durée de vie maximale.
+        </p>
+        <p class="response">En cochant la case "<i>Rester connecté</i> " lors de votre identification, vous prolongez
+            cette durée.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>Est-ce dangereux de rester connecté trop longtemps ?</h3>
+        <p class="response">Non. Techniquement, nous utilisons le principe d'<b>authentication par jetons chiffrés</b>
+            (comme Google, Facebook, etc).</p>
+        <p class="response">Nous nous assurons en temps réels que les jetons ne sont pas falsifiés ou volés et nous
+            bloquons toute opération suspecte.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>Je trouve mon mot de passe trop compliqué, puis-je le changer ?</h3>
+        <p class="response">Vous pouvez tout à fait <b>changer votre mot de passe depuis votre profil</b>.</p>
+        <p class="response"><b>{{appName}}</b> propose un générateur aléatoire de mot de passe.</p>
+        <p class="response">Ces mots de passe sont effectivement compliqués à retenir mais ils sont aussi beaucoup plus
+            complexes à deviner...</p>
+        <p class="response">Nous n'avons pas connaissance de votre mot de passe et nous vous <b>recommandons de le
+                changer régulièrement</b> depuis votre profil.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>J'ai perdu mon mot de passe, je ne suis plus connecté et je n'ai donc pas accès à l'application, comment
+            faire ?</h3>
+        <p class="response">Pour le moment, seul les utilisateurs authentifiés peuvent changer leur mot de passe (depuis
+            leur profil).</p>
+        <p class="response">Nous vous invitons à <b>nous contacter par email</b> afin que nous puissions procéder
+            ensemble au changement de votre mot de passe.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>C'est bien sécurisé votre application ? J'ai un peu peur de laisser mes données dans votre Cloud...</h3>
+        <p class="response">Vos données sont <b>protegées</b> et leurs accès sont <b>fortement chiffrés</b>.</p>
+        <p class="response">Nous ne pouvons naturellement pas divulguer tous les détails concernant la sécurité de notre
+            plateforme mais elle repose sur un savoir-faire que les concepteurs de <b>{{appName}}</b> propose également
+            aux environnements bancaires ou industriels, au sens large.</p>
+        <p class="response">C'est une <b>partie non négligeable de notre métier</b> 😉.</p>
+        <p class="response">Vous êtes également couvert par le <a
+                href="https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a>.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>Votre application n'est pas chère, est-ce que vous vendez nos données pour vous faire un peu d'argent ?</h3>
+        <p class="response">Absolument pas !</p>
+        <p class="response"><b>Les données</b> que vous générez sur la plateforme <b>restent sur la plateforme</b> !</p>
+        <p class="response">C'est explicité dans nos <a [href]="tos" target="blank">CGVU</a> et nous nous conformons au <a
+                href="https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a></p>
+    </div>
+
+</mat-expansion-panel>
