@@ -15,10 +15,16 @@ h3 {
     margin-top: 16px;
 }
 
-mat-divider{
+mat-divider {
     margin-top: 16px;
 }
 
 .response {
     margin: 0;
+}
+
+.checklist {
+    display: flex;
+    margin: 12px;
+    flex-direction: column;
 }

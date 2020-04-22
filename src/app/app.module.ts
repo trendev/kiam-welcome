@@ -9,7 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { CookieConsentComponent } from './cookie-consent/cookie-consent.component';
 import { FAQComponent } from './faq/faq.component';
 import { ApplicationQuestionsComponent } from './faq/application-questions/application-questions.component';
-import { FirstTimeQuestionsComponent } from './faq/first-time-questions/first-time-questions.component';
+import { FirstTimeQuestionsComponent } from './faq/first-steps-questions/first-steps-questions.component';
 import { SecurityQuestionsComponent } from './faq/security-questions/security-questions.component';
 import { OfferingQuestionsComponent } from './faq/offering-questions/offering-questions.component';
 import { ClientsQuestionsComponent } from './faq/clients-questions/clients-questions.component';
