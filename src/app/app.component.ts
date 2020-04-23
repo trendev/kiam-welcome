@@ -12,6 +12,7 @@ import { environment } from '@env/environment';
 export class AppComponent implements OnInit {
   title = 'kiam';
   tos: string;
+  mailto: string;
 
   constructor(private snackBar: MatSnackBar, private consentService: ConsentService) {
   }
@@ -19,6 +20,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
 
     this.tos = environment.tos;
+    this.mailto = environment.mailto;
 
     if (!this.consentService.isConsented()) {
       const snackBarRef = this.snackBar.openFromComponent(CookieConsentComponent, { data: { title: this.title } });

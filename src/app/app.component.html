@@ -22,6 +22,11 @@
           <mat-icon matListIcon>help</mat-icon>
         </a>
         <a mat-list-item (click)="sidenav.close()"
+          [href]="mailto"
+          target="_blank">
+          <mat-icon matListIcon>email</mat-icon>
+        </a>
+        <a mat-list-item (click)="sidenav.close()"
           [href]="tos"
           target="_blank">
           <mat-icon matListIcon>policy</mat-icon>
