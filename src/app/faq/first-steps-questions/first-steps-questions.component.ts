@@ -1,3 +1,4 @@
+import { environment } from './../../../environments/environment';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -9,10 +10,13 @@ export class FirstTimeQuestionsComponent implements OnInit {
 
   @Input() appName = 'kiam';
   @Input() expanded = true;
+  mailto: string;
 
-  constructor() { }
+  constructor() {
+  }
 
   ngOnInit(): void {
+    this.mailto = environment.mailto;
   }
 
 }
