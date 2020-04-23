@@ -1,7 +1,10 @@
 <mat-expansion-panel [expanded]=expanded>
     <mat-expansion-panel-header>
         <mat-panel-title>
-            <h1>🔐 Sécurité</h1>
+            <div class="faq-title">
+                <i mat-card-avatar class="material-icons">verified_user</i>
+                <h1>Sécurité</h1>
+            </div>
         </mat-panel-title>
     </mat-expansion-panel-header>
 
@@ -35,7 +38,8 @@
     <div class="next">
         <h3>J'ai perdu mon mot de passe, je ne suis plus connecté et je n'ai donc pas accès à l'application, comment
             faire ?</h3>
-        <p class="response">Pour le moment, seuls les utilisateurs authentifiés peuvent changer leur mot de passe (depuis
+        <p class="response">Pour le moment, seuls les utilisateurs authentifiés peuvent changer leur mot de passe
+            (depuis
             leur profil).</p>
         <p class="response">Nous vous invitons à <b>nous contacter par email</b> afin que nous puissions procéder
             ensemble au changement de votre mot de passe.</p>
@@ -56,8 +60,8 @@
         <h3>Votre application n'est pas chère, est-ce que vous vendez nos données pour vous faire un peu d'argent ?</h3>
         <p class="response">Absolument pas !</p>
         <p class="response"><b>Les données</b> que vous générez sur la plateforme <b>restent sur la plateforme</b> !</p>
-        <p class="response">C'est explicité dans nos <a [href]="tos" target="blank">CGVU</a> et nous nous conformons au <a
-                href="https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a></p>
+        <p class="response">C'est explicité dans nos <a [href]="tos" target="blank">CGVU</a> et nous nous conformons au
+            <a href="https://www.cnil.fr/fr/comprendre-le-rgpd">RGPD</a></p>
     </div>
 
 </mat-expansion-panel>

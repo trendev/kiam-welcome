@@ -1,7 +1,10 @@
 <mat-expansion-panel [expanded]=expanded>
     <mat-expansion-panel-header>
         <mat-panel-title>
-            <h1>👣 Premiers pas</h1>
+            <div class="faq-title">
+                <i mat-card-avatar class="material-icons">flight_takeoff</i>
+                <h1>Premiers pas</h1>
+            </div>
         </mat-panel-title>
     </mat-expansion-panel-header>
 
@@ -31,16 +34,17 @@
     <mat-divider></mat-divider>
     <div class="next">
         <h3>Je n'ai pas reçu de mail après mon inscription, que dois-je faire ?</h3>
-        <p class="response">Pas d'inquiétude, <b>prenez contact avec nous par <a
-                    [href]="mailto">email</a></b> et nous trouverons
+        <p class="response">Pas d'inquiétude, <b>prenez contact avec nous par <a [href]="mailto">email</a></b> et nous
+            trouverons
             rapidement
             une solution à ce problème.</p>
         <p class="response">A tout hazard:</p>
         <div class="checklist">
             <mat-checkbox>vérifiez bien dans vos SPAM ou dans votre corbeille,</mat-checkbox>
             <mat-checkbox>activez les notifications pour la réception des emails,</mat-checkbox>
-            <mat-checkbox>assurez-vous que l'adresse renseignée est la bonne (si si, ça arrive relativement souvent faites-nous confiance...).</mat-checkbox>
-            
+            <mat-checkbox>assurez-vous que l'adresse renseignée est la bonne (si si, ça arrive relativement souvent
+                faites-nous confiance...).</mat-checkbox>
+
         </div>
     </div>
 </mat-expansion-panel>
