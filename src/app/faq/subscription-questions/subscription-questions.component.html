@@ -9,60 +9,65 @@
     </mat-expansion-panel-header>
 
     <div>
-        <h3>Je ne trouve pas l'application sur App Store ou Play Store, est-ce normal ?</h3>
-        <p class="response">Oui, c'est tout à fait normal.</p>
-        <p class="response"><b>{{appName}} est une application cloud (webapp)</b>, il ne s'agit pas d'une application
-            native Android ou iOS.</p>
-        <p class="response">Elle a juste besoin d'un navigateur internet récent pour s'exécuter correctement.</p>
-    </div>
-    <mat-divider></mat-divider>
-    <div class="next">
-        <h3>Est-ce que je peux télécharger l'application sur mon téléphone ou ma tablette ?</h3>
-        <p class="response">Il n'est pas nécessaire de télécharger l'application sur votre téléphone ou votre tablette.
+        <h3>Où se trouvent les factures de mon abonnement à {{appName}} ?</h3>
+        <p class="response">Toutes <b>vos factures se trouvent dans l'espace "souscription" de votre profil</b>.</p>
+        <p class="response">Elles sont sauvegardées dans un Cloud mais nous vous invitons à les télécharger également.
         </p>
-        <p class="response">Nous recommandons de <b>sauvegarder le lien de l'application <a href="/app/"
-                    target="_blank">{{appName}}</a> dans les favoris</b> de votre navigateur internet.</p>
-        <p class="response">Si vous le souhaitez, vous pouvez néanmoins ajouter un raccourci à l'écran d'accueil de
-            votre téléphone ou de votre tablette (ex: sur <a
-                href="https://support.mozilla.org/fr/kb/comment-ajouter-un-raccourci-vers-site-web-firefox-android"
-                target="_blank">Android</a> ou <a href="https://support.apple.com/fr-fr/guide/iphone/iph42ab2f3a7/ios"
-                target="_blank">iOS</a>).</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>J'utilise Edge sur Windows 10 et j'ai un smartphone avec Windows Mobile. Est-ce que je peux aussi utiliser
-            l'application ? </h3>
-        <p class="response">Oui, bien sûr. <b>{{appName}} fonctionne sur tous les appareils possédant un navigateur
-                internet récent.</b>
-        </p>
-        <p class="response">Cela signifie qu'elle fonctionne aussi bien sur un ordinateur avec Edge, Chrome, Firefox ou
-            Safari (pour ne citer que ceux là...) que sur
-            un smartphone ou une tablette numérique avec Chrome ou Safari par exemple.</p>
-        <p class="response">Les consoles de salons et les Box TV possédant également un navigateur internet, il est
-            <b>aussi tout à fait possible d'utiliser {{appName}} sur votre télévision...</b></p>
+        <h3>Est-ce que je facilement annuler mon abonnement et supprimer mon compte ?</h3>
+        <p class="response">Oui, <b>vous pouvez très facilement vous désabonner ou vous ré-abonner depuis l'espace
+                "souscription" de votre profil</b>.</p>
+        <p class="response">Si vous ne procéder par à un ré-abonnement avant la date d'engagement de votre abonnement, à
+            l'issue de cette échéance, votre compte sera bloqué pour une période de 14 jours puis il sera tout
+            simplement détruit.</p>
+        <p class="response">Vous pouvez également nous contacter afin que nous procédions ensemble à un désabonnement et
+            à une destruction immédiate de votre compte.</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Un message apparaît de temps en temps m'informant qu'une mise à jour est disponible, que dois-je faire pour
-            mettre à jour l'application ?</h3>
-        <p class="response">La <b>mise à jour est automatique</b>.</p>
-        <p class="response">Vous pouvez toutefois cliquer sur le bouton vous
-            invitant à recharger l'application ou tout simplement fermer l'onglet courant ou votre navigateur internet
-            et réouvrir <b><a href="/app/">{{appName}}</a></b>.</p>
-        <p class="response">Un message de confirmation vous indiquera lorsque l'application est à jour et fonctionne
-            avec la dernière version de code.</p>
+        <h3>Une erreur avec ma carte bancaire m'empêche de finaliser ma souscription, que dois-je faire ?</h3>
+        <p class="response">Nous avons mis en place en 2018 un mécanisme de validation des paiements par carte bancaire
+            (3D Secure) puis en 2019 nous avons implanté une nouvelle version de ce mécanisme (3DS-v2) afin de répondre
+            aux futures exigences bancaires (validation d'un paiement en ligne par une authentification à double
+            facteur).</p>
+        <p class="response"><b>Il est tout à fait possible que votre carte ne supporte pas encore ce niveau
+                d'exigence</b>.</p>
+        <p class="response">Nous vous invitons à prendre contact avec votre banque afin qu'elle active ce service sur
+            votre carte. C'est usuellement un service gratuit qui sera obligatoire à partir de 2020 ou 2021.</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Il a une page blanche indiquant que l'application est en cours de chargement mais elle ne se charge pas, que dois-je faire dans ce cas ?</h3>
-        <p class="response">Il est possible que la mise à jour <b>requiert que vous fermiez les autres onglets où l'application est déjà ouverte</b>.</p>
-        <p class="response">Veillez à exécuter <b><a href="/app/">{{appName}}</a></b> dans un seul onglet, afin d'éviter d'avoir des conflits de version au sein du même navigateur internet.</p>
-        <p class="response">Vous pouvez aussi <b>tout simplement rafraîchir l'onglet</b> de l'application.</p>
+        <h3>Est-ce que je peux fournir un RIB ou pouvez-vous émettre un mandat SEPA à la place d'un paiement par carte
+            bancaire ?</h3>
+        <p class="response">Afin de nous assurer d'une réduction des litiges et des impayés, nous avons opté pour
+            l'option paiement en ligne par carte bancaire avec 3DS-v2.</p>
+        <p class="response"><b>Nous ne proposons l'option "paiement SEPA" qu'à nos clients ayant déjà une certaine
+                ancienneté sur la plateforme</b>.</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Qui a conçu et qui maintient cette application ?</h3>
-        <p class="response">L'application <b>{{appName}} est développée et maintenue par la société TRENDev</b>, spécialisée en conseils, recherche et développement informatique.</p>
-        <p class="response">Sa conception repose sur un savoir-faire largement éprouvé dans le monde industriel et des technologies récentes et innovantes.</p>
+        <h3>Est-ce que le prix de l'abonnement va rester aussi bas longtemps ?</h3>
+        <p class="response">Pour le moment, <b>nous n'avons pas besoin d'augmenter le tarif de base pour les fonctions
+                actuellement implantées</b>.</p>
+        <p class="response">Les futures évolutions fonctionnelles entraîneront probablement la création de nouveaux
+            forfaits et donc ne nouveaux tarifs.</p>
+        <p class="response">En toute transparence, nous vous tiendrons bien évidemment informé de ces évolutions
+            tarifaires si elles doivent se produire.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>Y-a-t il une fonction de parrainage dans l'application ?</h3>
+        <p class="response">Pour le moment, <b>non</b>.</p>
+        <p class="response">Cette fonction nous est demandée depuis peu. Nous réfléchissons à son implantation et aux
+            avantages qui peuvent en découler pour nos utilisateurs.</p>
+    </div>
+    <mat-divider></mat-divider>
+    <div class="next">
+        <h3>Que se passe-t-il maintenant que j'ai payé avec ma carte bancaire ?</h3>
+        <p class="response">Ce point est explicité dans nos <a [href]="tos" target="_blank">CGVU</a>.</p>
+        <p class="response">En fonction de l'offre souscrite, vous bénéficiez de tous les services de l'application pour la période converte par l'abonnement.</p>
+        <p class="response">L'abonnement est d'ailleurs automatiquement renouvellé à l'issue de cette période pour une nouvelle période.</p>
     </div>
 </mat-expansion-panel>

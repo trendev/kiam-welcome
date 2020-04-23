@@ -1,3 +1,4 @@
+import { environment } from '@env/environment';
 import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
@@ -10,9 +11,12 @@ export class SubscriptionQuestionsComponent implements OnInit {
   @Input() appName = 'kiam';
   @Input() expanded = true;
 
+  tos: string;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.tos = environment.tos;
   }
 
 }
