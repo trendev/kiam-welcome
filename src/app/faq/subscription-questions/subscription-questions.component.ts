@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-subscription-questions',
@@ -6,6 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./subscription-questions.component.scss']
 })
 export class SubscriptionQuestionsComponent implements OnInit {
+
+  @Input() appName = 'kiam';
+  @Input() expanded = true;
 
   constructor() { }
 
