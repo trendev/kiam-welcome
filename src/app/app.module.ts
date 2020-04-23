@@ -13,6 +13,7 @@ import { FirstTimeQuestionsComponent } from './faq/first-steps-questions/first-s
 import { SecurityQuestionsComponent } from './faq/security-questions/security-questions.component';
 import { BillsQuestionsComponent } from './faq/bills-questions/bills-questions.component';
 import { SubscriptionQuestionsComponent } from './faq/subscription-questions/subscription-questions.component';
+import { MiscQuestionsComponent } from './faq/misc-questions/misc-questions.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { SubscriptionQuestionsComponent } from './faq/subscription-questions/sub
     FirstTimeQuestionsComponent,
     SecurityQuestionsComponent,
     BillsQuestionsComponent,
-    SubscriptionQuestionsComponent
+    SubscriptionQuestionsComponent,
+    MiscQuestionsComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
