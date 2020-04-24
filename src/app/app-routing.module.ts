@@ -15,7 +15,7 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
-    path: 'faq',
+    path: 'support',
     component: FAQComponent
   }
 ];
