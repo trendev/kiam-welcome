@@ -10,13 +10,13 @@ export class FirstTimeQuestionsComponent implements OnInit {
 
   @Input() appName = 'kiam';
   @Input() expanded = true;
-  mailto: string;
+  support: string;
 
   constructor() {
   }
 
   ngOnInit(): void {
-    this.mailto = environment.mailto;
+    this.support = environment.support;
   }
 
 }
