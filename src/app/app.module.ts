@@ -14,6 +14,7 @@ import { SecurityQuestionsComponent } from './faq/security-questions/security-qu
 import { BillsQuestionsComponent } from './faq/bills-questions/bills-questions.component';
 import { SubscriptionQuestionsComponent } from './faq/subscription-questions/subscription-questions.component';
 import { MiscQuestionsComponent } from './faq/misc-questions/misc-questions.component';
+import { SupportComponent } from './faq/support/support.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { MiscQuestionsComponent } from './faq/misc-questions/misc-questions.comp
     SecurityQuestionsComponent,
     BillsQuestionsComponent,
     SubscriptionQuestionsComponent,
-    MiscQuestionsComponent
+    MiscQuestionsComponent,
+    SupportComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
