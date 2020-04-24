@@ -1,68 +1,68 @@
-<mat-expansion-panel [expanded]=true>
+<mat-expansion-panel [expanded]=expanded>
     <mat-expansion-panel-header>
         <mat-panel-title>
             <div class="faq-title">
-                <i class="material-icons">get_app</i>
-                <h1>Divers</h1>
+                <i class="material-icons">info</i>
+                <h1>Autre</h1>
             </div>
         </mat-panel-title>
     </mat-expansion-panel-header>
 
     <div>
-        <h3>Je ne trouve pas l'application sur App Store ou Play Store, est-ce normal ?</h3>
-        <p class="response">Oui, c'est tout à fait normal.</p>
-        <p class="response"><b>{{appName}} est une application cloud (webapp)</b>, il ne s'agit pas d'une application
-            native Android ou iOS.</p>
-        <p class="response">Elle a juste besoin d'un navigateur internet récent pour s'exécuter correctement.</p>
+        <h3>Pourquoi spécifier la durée d'une prestation lors de la création d'une "Offre"?</h3>
+        <p class="response">Pour le moment, <b>cette information n'est pas exploitée par le système</b>.</p>
+        <p class="response">Nous envisageons à l'avenir de permettre à nos utilisateurs professionnels de proposer
+            directement leurs services et leurs produits depuis l'application.</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Est-ce que je peux télécharger l'application sur mon téléphone ou ma tablette ?</h3>
-        <p class="response">Il n'est pas nécessaire de télécharger l'application sur votre téléphone ou votre tablette.
-        </p>
-        <p class="response">Nous recommandons de <b>sauvegarder le lien de l'application <a href="/app/"
-                    target="_blank">{{appName}}</a> dans les favoris</b> de votre navigateur internet.</p>
-        <p class="response">Si vous le souhaitez, vous pouvez néanmoins ajouter un raccourci à l'écran d'accueil de
-            votre téléphone ou de votre tablette (ex: sur <a
-                href="https://support.mozilla.org/fr/kb/comment-ajouter-un-raccourci-vers-site-web-firefox-android"
-                target="_blank">Android</a> ou <a href="https://support.apple.com/fr-fr/guide/iphone/iph42ab2f3a7/ios"
-                target="_blank">iOS</a>).</p>
+        <h3>Quelle est la différence entre une prestation et un forfait sur l'application ?</h3>
+        <p class="response"><b>Une prestation est une activité que vous souhaitez facturer à l'unité</b>. Il s'agit
+            généralement d'un service.</p>
+        <p class="response">Par exemple: une coupe de cheveux, une journée de conseil, la garde d'un enfant...</p>
+        <p class="response"><b>Un forfait est un regroupement de services (ou un groupement d'autres forfaits) que vous
+                souhaitez facturer à l'ensemble</b> et non plus à l'unité.</p>
+        <p class="response">Par exemple: une coupe de cheveux avec un shampoing et un brushing ou même tout
+            simplement une promotion exceptionnelle sur un ensemble de services...</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>J'utilise Edge sur Windows 10 et j'ai un smartphone avec Windows Mobile. Est-ce que je peux aussi utiliser
-            l'application ? </h3>
-        <p class="response">Oui, bien sûr. <b>{{appName}} fonctionne sur tous les appareils possédant un navigateur
-                internet récent.</b>
-        </p>
-        <p class="response">Cela signifie qu'elle fonctionne aussi bien sur un ordinateur avec Edge, Chrome, Firefox ou
-            Safari (pour ne citer que ceux là...) que sur
-            un smartphone ou une tablette numérique avec Chrome ou Safari par exemple.</p>
-        <p class="response">Les consoles de salons et les Box TV possédant également un navigateur internet, il est
-            <b>aussi tout à fait possible d'utiliser {{appName}} sur votre télévision...</b></p>
+        <h3>Je facture mes prestations en régie et pas au forfait, je suis un peu perdu avec la notion d'offre de
+            l'application...</h3>
+        <p class="response"><b>La différence entre une facturation en régie et une facturation au forfait est purement
+                contractuelle</b>.</p>
+        <p class="response">La facturation au forfait engage le prestataire à une obligation de résultat alors que
+            généralement la prestation en régie ne l'engage qu'en termes de moyens.</p>
+        <p class="response">Ainsi, si vous facturez vos prestations en régie, vous pouvez librement créer des services,
+            les facturer à l'unité (ce que nous appelons des prestations) et/ou facturer un ensemble en regroupant
+            d'autres (ce que nous appelons des forfaits).</p>
+        <p class="response">Mais encore une fois, les notions de "régie" ou "forfait" ne sont pas présentes par défaut
+            dans
+            l'application: c'est à vous de les expliciter dans le libellé de vos services.</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Un message apparaît de temps en temps m'informant qu'une mise à jour est disponible, que dois-je faire pour
-            mettre à jour l'application ?</h3>
-        <p class="response">La <b>mise à jour est automatique</b>.</p>
-        <p class="response">Vous pouvez toutefois cliquer sur le bouton vous
-            invitant à recharger l'application ou tout simplement fermer l'onglet courant ou votre navigateur internet
-            et réouvrir <b><a href="/app/">{{appName}}</a></b>.</p>
-        <p class="response">Un message de confirmation vous indiquera lorsque l'application est à jour et fonctionne
-            avec la dernière version de code.</p>
+        <h3>Peut-on mettre un forfait dans un autre forfait ?</h3>
+        <p class="response"><b>Oui</b>. Certains de nos clients utilisent cette fonction pour faire des offres
+            promotionnelles pour les fêtes par exemple.</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Il a une page blanche indiquant que l'application est en cours de chargement mais elle ne se charge pas, que dois-je faire dans ce cas ?</h3>
-        <p class="response">Il est possible que la mise à jour <b>requiert que vous fermiez les autres onglets où l'application est déjà ouverte</b>.</p>
-        <p class="response">Veillez à exécuter <b><a href="/app/">{{appName}}</a></b> dans un seul onglet, afin d'éviter d'avoir des conflits de version au sein du même navigateur internet.</p>
-        <p class="response">Vous pouvez aussi <b>tout simplement rafraîchir l'onglet</b> de l'application.</p>
+        <h3>Quelle est la différence entre les "groupes" et les "catégories" ?</h3>
+        <p class="response"><b>Un groupe va correspondre à un ensemble de facturation</b> (par exemple une facture pour
+            un
+            comité d'entreprise) <b>alors qu'une catégorie est juste un regroupement logique de clients</b> (par exemple
+            une
+            catégorie "clients fidèles").</p>
     </div>
     <mat-divider></mat-divider>
     <div class="next">
-        <h3>Qui a conçu et qui maintient cette application ?</h3>
-        <p class="response">L'application <b>{{appName}} est développée et maintenue par la société TRENDev</b>, spécialisée en conseils, recherche et développement informatique.</p>
-        <p class="response">Sa conception repose sur un savoir-faire largement éprouvé dans le monde industriel et des technologies récentes et innovantes.</p>
+        <h3>Comment exploiter la notion de "catégorie" ?</h3>
+        <p class="response">Pour le moment, <b>elle vous permet simplement de regrouper des clients sous une ou
+                plusieurs catégories</b>.</p>
+        <p class="response">Certains de nos utilisateurs nous ont demandé d'étendre cette fonction à l'envoi groupé de
+            SMS ou de mails promotionnels.</p>
+        <p>Nous y travaillons actuellement et vous serez naturellement informé quand
+            cette nouvelle fonction sera disponible.</p>
     </div>
 </mat-expansion-panel>
