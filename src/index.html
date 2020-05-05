@@ -1,26 +1,19 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <title>kiam</title>
-  <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "kiam",
-      "applicationCategory": "https://schema.org/GameApplication",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5",
-        "ratingCount": "1000"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "3.00",
-        "priceCurrency": "EUR"
-      }
-    }
-    </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165570870-1">
+  </script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-165570870-1');
+  </script>
   <base href="/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Kit pour les Indépendants et les Artisans Malins">
@@ -29,7 +22,9 @@
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
+
 <body class="mat-typography">
   <app-root></app-root>
 </body>
+
 </html>
