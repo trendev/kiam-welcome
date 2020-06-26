@@ -11,10 +11,10 @@ export class HomeComponent implements OnInit {
   data: Feedback[];
 
   constructor() {
-   }
+  }
 
   ngOnInit(): void {
-    this.data = feedbacks;
+    this.data = feedbacks.sort((fdk1, fdk2) => fdk1.author.localeCompare(fdk2.author));
   }
 
 }
