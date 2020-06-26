@@ -45,6 +45,13 @@ mat-card {
     padding-left: 12px;
 }
 
+.feedback-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
 @media all and (max-device-width: 800px) {
 
     .feature_card {
