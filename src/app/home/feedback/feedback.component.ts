@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class FeedbackComponent implements OnInit {
 
-  @Input() feedback: Feedback;
+  @Input() fdk: Feedback;
 
   constructor() { }
 

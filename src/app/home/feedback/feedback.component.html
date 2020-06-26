@@ -1,1 +1,10 @@
-{{feedback | json}}
+<div class="feedback">
+    <div class="title mat-subheading-2">
+        <span>{{fdk.author}} - {{fdk.jobrole}}</span>
+    </div>
+    <div class="content">
+        <ng-container *ngFor="let line of fdk.content">
+            <p><i>{{line}}</i></p>
+        </ng-container>
+    </div>
+</div>

@@ -147,8 +147,8 @@
         </mat-card-header>
         <mat-card-content>
             <div class="feedback-container">
-                <ng-container *ngFor="let fbk of data">
-                    <app-feedback [feedback]="fbk"></app-feedback>
+                <ng-container *ngFor="let feedback of data">
+                    <app-feedback [fdk]="feedback"></app-feedback>
                 </ng-container>
             </div>
         </mat-card-content>
