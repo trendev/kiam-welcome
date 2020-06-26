@@ -26,7 +26,7 @@ export const feedbacks: Feedback[] = [
         author: 'José',
         jobrole: 'Électricien (94)',
         content: [
-            'Licencié en 2011, j’ai décidé de créer ma société pour être enfin indépendant et autonome.',
+            'Licencié en 2012, j’ai décidé de créer ma société pour être enfin indépendant et autonome.',
             'J’ai déjà utilisé une bonne dizaine d’applications de facturation gratuites ou payantes... Je pense qu’elles ne sont pas adaptées, parfois trop complexes ou simplement trop limitées.',
             'En cherchant sur internet, j’ai trouvé par hazard cette application fin 2018. J’ai demandé une démonstration de l’application en cliquant sur le bouton du support.',
             'J’aime bien le fait de pouvoir utiliser l’application depuis mon téléphone (je suis plus souvent sur mes chantiers qu’au bureau) ou sur mon ordinateur.',
