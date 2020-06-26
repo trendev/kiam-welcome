@@ -1,5 +1,6 @@
+import { Feedback } from './feedback/feedback.model';
+import { feedbacks } from './feedback/feedbacks.data';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  data: Feedback[];
+
+  constructor() {
+   }
 
   ngOnInit(): void {
+    this.data = feedbacks;
   }
 
 }

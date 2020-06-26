@@ -15,6 +15,7 @@ import { BillsQuestionsComponent } from './faq/bills-questions/bills-questions.c
 import { SubscriptionQuestionsComponent } from './faq/subscription-questions/subscription-questions.component';
 import { MiscQuestionsComponent } from './faq/misc-questions/misc-questions.component';
 import { SupportComponent } from './faq/support/support.component';
+import { FeedbackComponent } from './home/feedback/feedback.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { SupportComponent } from './faq/support/support.component';
     BillsQuestionsComponent,
     SubscriptionQuestionsComponent,
     MiscQuestionsComponent,
-    SupportComponent
+    SupportComponent,
+    FeedbackComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
