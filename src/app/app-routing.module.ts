@@ -23,7 +23,8 @@ const routes: Routes = [
 @NgModule({
   imports: [RouterModule.forRoot(routes, {
     initialNavigation: 'enabled',
-    relativeLinkResolution: 'legacy'
+    relativeLinkResolution: 'legacy',
+    // enableTracing: true, // <-- debugging purposes only
 })],
   exports: [RouterModule]
 })
