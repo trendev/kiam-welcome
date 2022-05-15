@@ -1,5 +1,11 @@
 <section>
     <mat-card>
+        <mat-card-title color="primary">Informations importantes</mat-card-title>
+        <mat-card-content>
+            <p class="announcement">Arrêt des services le 01/07/2022 - 00H00</p>
+        </mat-card-content>
+    </mat-card>
+    <mat-card>
         <mat-card-header>
             <mat-card-title>
                 Kit pour les Indépendants et les Artisans Malins
@@ -24,7 +30,7 @@
         </mat-card-header>
         <mat-card-content>
             <div class="action-buttons">
-                <a mat-raised-button color="primary" class="action-button" href="/app/sign-up">S'inscrire</a>
+                <a mat-raised-button color="primary" class="action-button" href="/app/sign-up" disabled="true">S'inscrire</a>
             </div>
         </mat-card-content>
     </mat-card>
@@ -184,7 +190,7 @@
             </div>
             <mat-card-actions>
                 <div class="action-buttons">
-                    <a mat-raised-button color="accent" class="action-button" href="/app/sign-up">S'inscrire
+                    <a mat-raised-button color="accent" class="action-button" href="/app/sign-up" disabled="true">S'inscrire
                         maintenant</a>
                     <a mat-raised-button color="primary" [ngClass]="['action-button','last-action-button']"
                         href="/support">Consulter la FAQ</a>

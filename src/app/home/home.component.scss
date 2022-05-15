@@ -53,6 +53,15 @@ mat-card {
     align-content: center;
 }
 
+p.announcement {
+    margin-top: 16px;
+    color: red;
+    font-size: x-large;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    text-align: center;
+}
+
 @media all and (max-device-width: 800px) {
 
     .feature_card {
